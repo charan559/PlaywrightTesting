@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test.describe('api testing', () => {
 
-    test("1", async ({ request }) => {
+    test("get status code", async ({ request }) => {
         const response = await request.get('https://reqres.in/api/users/2')
         expect(response.status()).toBe(200);
         const text = await response.text();
