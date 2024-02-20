@@ -1,7 +1,7 @@
-import { expect, test } from '../tests/Fixtures';
+import { expect, test } from './Fixtures';
 
 
-test.describe.only('Accessibility testing', () => {
+test.describe('Accessibility testing', () => {
 
     test("Page Testing for violations", async ({ page, accessiblityBuilder }) => {
         await page.goto("https://commitquality.com/practice-api");
