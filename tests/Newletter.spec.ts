@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import randomGmail from './CommonFunctionality';
+import randomGmail from './Fixtures/CommonFunctionality';
 
 test.beforeEach(async ({ page }) => {
     await page.goto('https://demowebshop.tricentis.com/');
