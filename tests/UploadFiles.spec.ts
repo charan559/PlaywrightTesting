@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("basic test", async ({ page }) => {
+test("upload files", async ({ page }) => {
     const filePath = '../';
     await page.goto("https://commitquality.com/practice-file-upload");
     await page.getByTestId('file-input').click();
