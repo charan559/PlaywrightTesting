@@ -29,14 +29,31 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-   // storageState:'./LoginAuth.json'
+    // storageState:'./LoginAuth.json'
   },
 
   /* Configure projects for major browsers */
   projects: [
+    // {
+    //   name: "setup",
+    //   testDir:"./",
+    //   testMatch:"global-setup.ts",
+    //   teardown:"teardown"
+
+    // },
+    // {
+    //   name: "teardown",
+    //   testDir:"./",
+    //   testMatch:"global-teardown.ts",
+    //   use:{
+    //     storageState:"./LoginAuth.json"
+    //   }
+    // },
+    
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+     // dependencies: ['setup'],
+      use: { ...devices['Desktop Chrome'], /*storageState:'./LoginAuth.json'*/ },
     },
 
     // {
