@@ -9,7 +9,10 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.41.2",
-    "@types/node": "^20.11.17"
+    "@types/node": "^20.11.17",
+    "babel-plugin-istanbul": "^6.1.1",
+    "nyc": "^15.1.0",
+    "playwright-test-coverage": "^1.2.12"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.8.5",
